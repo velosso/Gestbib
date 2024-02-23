@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/gesbib?createDatabaseIfNotExist=true&UserSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTime=UTC
+    username: root
+    password: ""
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database: MYSQL
+    show-sql: true
+
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5Dialect
+server:
+  port: 8082
